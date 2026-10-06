@@ -1,6 +1,6 @@
 class Solution {
     public int characterReplacement(String s, int k) {
-        int[] count= new int[26];
+        int[] count=new int[26];
         int left=0;
         int maxLength=0;
         int maxFrequency=0;
@@ -11,8 +11,8 @@ class Solution {
                 count[s.charAt(left)-'A']--;
                 left++;
             }
-            maxLength=Math.max(maxLength, right-left+1);
-        }
+            maxLength=Math.max(maxLength, (right-left+1));
+        }   
         return maxLength;
     }
 }
